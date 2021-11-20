@@ -85,7 +85,7 @@ h1 {
 
 
 main {
-    margin-top: var(--header-height);
+    margin-top: calc(var(--header-height) + 2rem);
 }
 
 
@@ -93,6 +93,7 @@ main {
 
 .logo {
     font: 700 1.31rem 'Poppins', sans-serif;
+    color: var(--title-color) 
 }
 
 
@@ -199,3 +200,21 @@ max-width: 100%;
         hsl(var(--hue),  36%, 57%, 1) 0%,
         hsla(var(--hue), 65%, 88%, 0.34) 100%);    
 }
+
+
+
+nav .menu{
+opacity: 0;
+visibility: hidden;
+}
+
+
+nav.show .menu{
+opacity: 1;
+visibility: visible;
+
+background: var(--body-color);
+
+height: 10vh;
+}
+    
